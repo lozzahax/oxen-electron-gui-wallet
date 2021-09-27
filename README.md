@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Lozzax is a fork of O which is a private cryptocurrency based on Monero. Lozzax just Lozzax aims to provide a private data transmission layer using a second layer of Service Nodes.
+Lozzax is a fork of Oxen which is a private cryptocurrency based on Monero. Lozzax just like Oxen aims to provide a private data transmission layer using a second layer of Service Nodes.
 More information on the project can be found on the [website](https://lozzax.xyz) and in the [whitepaper](https://lozzax.xyz/whitepaper). Lozzax is an open source project, and we encourage contributions from anyone with something to offer.
 
 ![Lozzax wallet image](./src-electron/icons/mrcuug.PNG.jpg)
