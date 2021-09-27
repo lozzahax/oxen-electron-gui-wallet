@@ -285,7 +285,7 @@ export default {
   },
   methods: {
     oxenWebsite() {
-      const url = "https://oxen.io/";
+      const url = "https://lozzax.xyz/";
       this.$gateway.send("core", "open_url", {
         url
       });

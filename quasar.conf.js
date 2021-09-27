@@ -156,11 +156,11 @@ module.exports = function() {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: "com.oxen.electron-wallet",
-        productName: "Oxen Electron Wallet",
-        copyright: "Copyright © 2018-2021 Oxen, 2018 Ryo Currency Project",
+        appId: "com.lozzax.electron-wallet",
+        productName: "Lozzax Electron Wallet",
+        copyright: "Copyright ©  2021 Lozzax, Copyright © 2018-2021 Oxen, 2018 Ryo Currency Project",
         afterSign: "build/notarize.js",
-        artifactName: "oxen-electron-wallet-${version}-${os}.${ext}",
+        artifactName: "lozzax-electron-wallet-${version}-${os}.${ext}",
         publish: "github",
 
         linux: {

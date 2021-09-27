@@ -1,11 +1,11 @@
-# Oxen Electron GUI Wallet
+# Lozzax Electron GUI Wallet
 
 ### Introduction
 
-Oxen (formerly Loki) is a private cryptocurrency based on Monero. Oxen aims to provide a private data transmission layer using a second layer of Service Nodes.
-More information on the project can be found on the [website](https://oxen.io) and in the [whitepaper](https://loki.network/whitepaper). Oxen is an open source project, and we encourage contributions from anyone with something to offer.
+Lozzax is a fork of Oxen which is a private cryptocurrency based on Monero. Lozzax just Oxen aims to provide a private data transmission layer using a second layer of Service Nodes.
+More information on the project can be found on the [website](https://lozzax.xyz) and in the [whitepaper](https://lozzax.xyz/whitepaper). Lozzax is an open source project, and we encourage contributions from anyone with something to offer.
 
-![Oxen wallet image](./src-electron/icons/mrcuug.PNG)
+![Lozzax wallet image](./src-electron/icons/mrcuug.PNG)
 
 ### About this project
 
@@ -15,7 +15,7 @@ Please submit any changes as pull requests to the development branch, all change
 
 #### Pre-requisites
 
-- Download latest [oxend](https://github.com/oxen-io/oxen-core/releases/latest)
+- Download latest [oxend](https://github.com/lozzax/lozzax/releases/latest)
 - Extract the oxend binaries to a folder
 
 #### Commands
@@ -23,10 +23,10 @@ Please submit any changes as pull requests to the development branch, all change
 ```
 nvm use 14.11.0
 npm install -g @quasar/cli
-git clone https://github.com/oxen-io/oxen-electron-gui-wallet
-cd oxen-electron-gui-wallet
-cp path_to_oxend_binaries/oxend bin/
-cp path_to_oxend_binaries/oxen-wallet-rpc bin/
+git clone https://github.com/lozzax/lozzax-electron-gui-wallet
+cd lozzax-electron-gui-wallet
+cp path_to_lozzaxd_binaries/lozzaxd bin/
+cp path_to_lozzaxd_binaries/lozzax-wallet-rpc bin/
 npm install
 ```
 

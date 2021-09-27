@@ -37,13 +37,13 @@ export class Backend {
     let configDir;
     let legacyLokiConfigDir;
     if (os.platform() === "win32") {
-      configDir = "C:\\ProgramData\\oxen";
+      configDir = "C:\\ProgramData\\lozzax";
       legacyLokiConfigDir = "C:\\ProgramData\\loki\\";
-      this.wallet_dir = `${os.homedir()}\\Documents\\Oxen`;
+      this.wallet_dir = `${os.homedir()}\\Documents\\Lozzax`;
     } else {
-      configDir = path.join(os.homedir(), ".oxen");
+      configDir = path.join(os.homedir(), ".lozzax");
       legacyLokiConfigDir = path.join(os.homedir(), ".loki/");
-      this.wallet_dir = path.join(os.homedir(), "Oxen");
+      this.wallet_dir = path.join(os.homedir(), "Lozzax");
     }
 
     // if the user has used loki before, just keep the same stuff
@@ -66,9 +66,9 @@ export class Backend {
     const daemon = {
       type: "remote",
       p2p_bind_ip: "0.0.0.0",
-      p2p_bind_port: 22022,
+      p2p_bind_port: 22122,
       rpc_bind_ip: "127.0.0.1",
-      rpc_bind_port: 22023,
+      rpc_bind_port: 22123,
       zmq_rpc_bind_ip: "127.0.0.1",
       out_peers: -1,
       in_peers: -1,
@@ -80,8 +80,8 @@ export class Backend {
     const daemons = {
       mainnet: {
         ...daemon,
-        remote_host: "imaginary.stream",
-        remote_port: 22023
+        remote_host: "imaginary.lozzax.xyz",
+        remote_port: 22123
       },
       stagenet: {
         ...daemon,
@@ -107,7 +107,7 @@ export class Backend {
         net_type: "mainnet"
       },
       wallet: {
-        rpc_bind_port: 22026,
+        rpc_bind_port: 22126,
         log_level: 0
       }
     };
@@ -122,20 +122,20 @@ export class Backend {
 
     this.remotes = [
       {
-        host: "imaginary.stream",
-        port: "22023"
+        host: "imaginary.lozzax.xyz",
+        port: "22123"
       },
       {
-        host: "nodes.hashvault.pro",
-        port: "22023"
+        host: "nodes.lozzax.xyz",
+        port: "22123"
       },
       {
-        host: "explorer.loki.aussie-pools.com",
+        host: "explorer.lozzax.xyz",
         port: "18081"
       },
       {
-        host: "public.loki.foundation",
-        port: "22023"
+        host: "public.lozzax.xyz",
+        port: "22123"
       }
     ];
 
@@ -348,7 +348,7 @@ export class Backend {
   async checkVersion() {
     try {
       const { data } = await axios.get(
-        "https://api.github.com/repos/loki-project/loki-electron-gui-wallet/releases/latest"
+        "https://api.github.com/repos/lozzax/lozzax-electron-gui-wallet/releases/latest"
       );
       // remove the 'v' from front of the version
       const latestVersion = data.tag_name.substring(1);

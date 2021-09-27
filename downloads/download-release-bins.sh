@@ -12,7 +12,7 @@ if [ -z "$RENAME" ]; then
     RENAME="latest"
 fi
 
-REPO="oxen-io/oxen-core"
+REPO="lozzax/lozzax"
 RELEASE="latest"
 
 if [ "$OS" == "Linux" ]; then

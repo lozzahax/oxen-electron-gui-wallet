@@ -1,16 +1,16 @@
 {
-  "name": "oxen-electron-wallet",
+  "name": "lozzax-electron-wallet",
   "version": "1.6.0",
-  "description": "Modern GUI interface for Oxen Currency",
-  "productName": "Oxen Electron Wallet",
+  "description": "Modern GUI interface for Lozzax Currency",
+  "productName": "Lozzax Electron Wallet",
   "repository": {
     "type": "git",
-    "url": "https://github.com/loki-project/loki-electron-gui-wallet.git"
+    "url": "https://github.com/lozzax/lozzax-electron-gui-wallet.git"
   },
-  "cordovaId": "com.oxen.wallet",
+  "cordovaId": "com.lozzax.wallet",
   "author": {
-    "name": "Oxen",
-    "email": "oxen@oxen.io"
+    "name": "Lozzax",
+    "email": "gui-wallet@lozzax.xyz"
   },
   "private": true,
   "scripts": {

@@ -13,7 +13,7 @@
 import ONSRecords from "./ons_records";
 
 export default {
-  name: "MyONS",
+  name: "MyLNS",
   components: {
     ONSRecords
   },

@@ -1,5 +1,5 @@
 <template>
-  <span> {{ value }} OXEN </span>
+  <span> {{ value }} LZX </span>
 </template>
 
 <script>
