@@ -59,12 +59,12 @@ export default {
 .ons-purchase {
   .description {
     white-space: pre-line;
-    // oxen-navy
+    // lozzax-navy
     color: #1f1c47;
   }
 
   .prices {
-    // oxen-navy
+    // lozzax-navy
     margin-top: 20px;
     color: #1f1c47;
   }

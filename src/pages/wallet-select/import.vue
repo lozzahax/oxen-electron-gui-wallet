@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class="q-mx-md import-wallet">
-      <OxenField
+      <LozzaxField
         :label="$t('fieldLabels.newWalletName')"
         :error="$v.wallet.name.$error"
       >
@@ -14,9 +14,9 @@
           @keyup.enter="import_wallet"
           @blur="$v.wallet.name.$touch"
         />
-      </OxenField>
+      </LozzaxField>
 
-      <OxenField
+      <LozzaxField
         :label="$t('fieldLabels.walletFile')"
         disable-hover
         :error="$v.wallet.path.$error"
@@ -42,9 +42,9 @@
           :text-color="theme == 'dark' ? 'white' : 'dark'"
           @click="selectFile"
         />
-      </OxenField>
+      </LozzaxField>
 
-      <OxenField :label="$t('fieldLabels.password')">
+      <LozzaxField :label="$t('fieldLabels.password')">
         <q-input
           v-model="wallet.password"
           :placeholder="$t('placeholders.walletPassword')"
@@ -54,9 +54,9 @@
           dense
           @keyup.enter="import_wallet"
         />
-      </OxenField>
+      </LozzaxField>
 
-      <OxenField :label="$t('fieldLabels.confirmPassword')">
+      <LozzaxField :label="$t('fieldLabels.confirmPassword')">
         <q-input
           v-model="wallet.password_confirm"
           type="password"
@@ -65,7 +65,7 @@
           dense
           @keyup.enter="import_wallet"
         />
-      </OxenField>
+      </LozzaxField>
       <q-btn
         class="submit-button"
         color="primary"
@@ -79,10 +79,10 @@
 <script>
 import { required } from "vuelidate/lib/validators";
 import { mapState } from "vuex";
-import OxenField from "components/oxen_field";
+import LozzaxField from "components/lozzax_field";
 export default {
   components: {
-    OxenField
+    LozzaxField
   },
   data() {
     return {
@@ -190,7 +190,7 @@ export default {
     }
   }
 
-  .oxen-field {
+  .lozzax-field {
     margin-top: 16px;
   }
 }

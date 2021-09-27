@@ -29,7 +29,7 @@
     <!-- TODO: Move this to it's own component -->
     <q-dialog ref="aboutModal" minimized>
       <div class="about-modal">
-        <img class="q-mb-md" src="oxen.svg" height="42" />
+        <img class="q-mb-md" src="lozzax.svg" height="42" />
 
         <p class="q-my-sm">Wallet Version: v{{ version }}</p>
         <p class="q-my-sm">Deaemon Version: v{{ daemonVersion }}</p>
@@ -41,7 +41,7 @@
         <div class="q-mt-md q-mb-lg external-links">
           <p>
             <a href="#" @click="openExternal('https://lozzax.xyz/')"
-              >https://oxen.io/</a
+              >https://lozzax.xyz/</a
             >
           </p>
           <p>
@@ -55,7 +55,7 @@
               >Discord</a
             >
             -
-            <!-- readded once oxen subreddit is known -->
+            <!-- readded once lozzax subreddit is known -->
             <!-- <a
               href="#"
               @click="openExternal('https://www.reddit.com/r/LozzaxCommunity/')"

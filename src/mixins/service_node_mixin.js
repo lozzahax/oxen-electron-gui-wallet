@@ -26,9 +26,9 @@ export default {
           (MAX_NUMBER_OF_CONTRIBUTORS - node.contributors.length);
       }
 
-      const minContributionOxen = minContributionAtomicUnits / 1e9;
+      const minContributionLozzax = minContributionAtomicUnits / 1e9;
       // ceiling to 4 decimal places
-      return minContributionOxen.toFixed(4);
+      return minContributionLozzax.toFixed(4);
     },
     openForContribution(node, addr = null) {
       let openContributionRemaining =
@@ -40,7 +40,7 @@ export default {
       }
       return openContributionRemaining;
     },
-    openForContributionOxen(node, addr = null) {
+    openForContributionLozzax(node, addr = null) {
       return (this.openForContribution(node, addr) / 1e9).toFixed(4);
     }
   }

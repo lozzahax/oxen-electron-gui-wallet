@@ -2,21 +2,21 @@
 
 ### Introduction
 
-Lozzax is a fork of Oxen which is a private cryptocurrency based on Monero. Lozzax just Oxen aims to provide a private data transmission layer using a second layer of Service Nodes.
+Lozzax is a fork of Lozzax which is a private cryptocurrency based on Monero. Lozzax just Lozzax aims to provide a private data transmission layer using a second layer of Service Nodes.
 More information on the project can be found on the [website](https://lozzax.xyz) and in the [whitepaper](https://lozzax.xyz/whitepaper). Lozzax is an open source project, and we encourage contributions from anyone with something to offer.
 
 ![Lozzax wallet image](./src-electron/icons/mrcuug.PNG)
 
 ### About this project
 
-This is the new Electron GUI for Oxen. It is open source and completely free to use without restrictions, anyone may create an alternative implementation of the Oxen Electron GUI that uses the protocol and network in a compatible manner.
+This is the new Electron GUI for Lozzax. It is open source and completely free to use without restrictions, anyone may create an alternative implementation of the Lozzax Electron GUI that uses the protocol and network in a compatible manner.
 
 Please submit any changes as pull requests to the development branch, all changes are assessed in the development branch before being merged to master, release tags are considered stable builds for the GUI.
 
 #### Pre-requisites
 
-- Download latest [oxend](https://github.com/lozzax/lozzax/releases/latest)
-- Extract the oxend binaries to a folder
+- Download latest [lozzaxd](https://github.com/lozzax/lozzax/releases/latest)
+- Extract the lozzaxd binaries to a folder
 
 #### Commands
 

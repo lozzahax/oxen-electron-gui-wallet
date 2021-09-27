@@ -35,27 +35,21 @@ export class Backend {
 
   init(config) {
     let configDir;
-    let legacyLokiConfigDir;
     if (os.platform() === "win32") {
       configDir = "C:\\ProgramData\\lozzax";
-      legacyLokiConfigDir = "C:\\ProgramData\\loki\\";
+     // legacyLokiConfigDir = "C:\\ProgramData\\loki\\";
       this.wallet_dir = `${os.homedir()}\\Documents\\Lozzax`;
     } else {
       configDir = path.join(os.homedir(), ".lozzax");
-      legacyLokiConfigDir = path.join(os.homedir(), ".loki/");
+    //  legacyLokiConfigDir = path.join(os.homedir(), ".loki/");
       this.wallet_dir = path.join(os.homedir(), "Lozzax");
     }
 
-    // if the user has used loki before, just keep the same stuff
-    if (fs.existsSync(legacyLokiConfigDir)) {
-      this.config_dir = legacyLokiConfigDir;
-    } else {
-      // create the new, Oxen location
+      // create the new, Lozzax location
       this.config_dir = configDir;
       if (!fs.existsSync(configDir)) {
         fs.mkdirpSync(configDir);
       }
-    }
 
     if (!fs.existsSync(path.join(this.config_dir, "gui"))) {
       fs.mkdirpSync(path.join(this.config_dir, "gui"));
@@ -294,8 +288,8 @@ export class Backend {
         if (path) {
           const baseUrl =
             net_type === "testnet"
-              ? "https://testnet.oxen.observer"
-              : "https://oxen.observer";
+              ? "https://testnet.lozzax.xyz"
+              : "https://explorer.lozzax.xyz";
           const url = `${baseUrl}/${path}/`;
           require("electron").shell.openExternal(url + params.id);
         }

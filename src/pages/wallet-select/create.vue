@@ -1,7 +1,7 @@
 <template>
   <q-page class="create-wallet">
     <div class="fields q-mx-md q-mt-md">
-      <OxenField
+      <LozzaxField
         :label="$t('fieldLabels.walletName')"
         :error="$v.wallet.name.$error"
       >
@@ -14,9 +14,9 @@
           @keyup.enter="create"
           @blur="$v.wallet.name.$touch"
         />
-      </OxenField>
+      </LozzaxField>
 
-      <OxenField :label="$t('fieldLabels.seedLanguage')">
+      <LozzaxField :label="$t('fieldLabels.seedLanguage')">
         <q-select
           v-model="wallet.language"
           :options="languageOptions"
@@ -25,9 +25,9 @@
           emit-value
           map-options
         />
-      </OxenField>
+      </LozzaxField>
 
-      <OxenField :label="$t('fieldLabels.password')" optional>
+      <LozzaxField :label="$t('fieldLabels.password')" optional>
         <q-input
           v-model="wallet.password"
           type="password"
@@ -37,9 +37,9 @@
           dense
           @keyup.enter="create"
         />
-      </OxenField>
+      </LozzaxField>
 
-      <OxenField :label="$t('fieldLabels.confirmPassword')">
+      <LozzaxField :label="$t('fieldLabels.confirmPassword')">
         <q-input
           v-model="wallet.password_confirm"
           type="password"
@@ -48,7 +48,7 @@
           dense
           @keyup.enter="create"
         />
-      </OxenField>
+      </LozzaxField>
 
       <q-btn
         class="submit-button"
@@ -63,10 +63,10 @@
 <script>
 import { required } from "vuelidate/lib/validators";
 import { mapState } from "vuex";
-import OxenField from "components/oxen_field";
+import LozzaxField from "components/lozzax_field";
 export default {
   components: {
-    OxenField
+    LozzaxField
   },
   data() {
     const languageOptions = [

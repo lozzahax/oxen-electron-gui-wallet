@@ -35,10 +35,10 @@
                 <div class="infoBox">
                   <div class="infoBoxContent">
                     <div class="text">
-                      <span>{{ $t("strings.oxenBalance") }}</span>
+                      <span>{{ $t("strings.lozzaxBalance") }}</span>
                     </div>
                     <div class="value">
-                      <span><FormatOxen :amount="address.balance"/></span>
+                      <span><FormatLozzax :amount="address.balance"/></span>
                     </div>
                   </div>
                 </div>
@@ -46,11 +46,11 @@
                 <div class="infoBox">
                   <div class="infoBoxContent">
                     <div class="text">
-                      <span>{{ $t("strings.oxenUnlockedBalance") }}</span>
+                      <span>{{ $t("strings.lozzaxUnlockedBalance") }}</span>
                     </div>
                     <div class="value">
                       <span
-                        ><FormatOxen :amount="address.unlocked_balance"
+                        ><FormatLozzax :amount="address.unlocked_balance"
                       /></span>
                     </div>
                   </div>
@@ -73,7 +73,7 @@
                 <div class="infoBox">
                   <div class="infoBoxContent">
                     <div class="text">
-                      <span>{{ $t("strings.oxenBalance") }}</span>
+                      <span>{{ $t("strings.lozzaxBalance") }}</span>
                     </div>
                     <div class="value"><span>N/A</span></div>
                   </div>
@@ -82,7 +82,7 @@
                 <div class="infoBox">
                   <div class="infoBoxContent">
                     <div class="text">
-                      <span>{{ $t("strings.oxenUnlockedBalance") }}</span>
+                      <span>{{ $t("strings.lozzaxUnlockedBalance") }}</span>
                     </div>
                     <div class="value"><span>N/A</span></div>
                   </div>
@@ -162,7 +162,7 @@
 import { mapState } from "vuex";
 const { clipboard, nativeImage } = require("electron");
 import AddressHeader from "components/address_header";
-import FormatOxen from "components/format_oxen";
+import FormatLozzax from "components/format_lozzax";
 import QrcodeVue from "qrcode.vue";
 import TxList from "components/tx_list";
 export default {
@@ -170,7 +170,7 @@ export default {
   components: {
     AddressHeader,
     TxList,
-    FormatOxen,
+    FormatLozzax,
     QrcodeVue
   },
   data() {

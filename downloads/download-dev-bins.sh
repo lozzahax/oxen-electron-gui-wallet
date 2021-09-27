@@ -12,11 +12,11 @@ if [ -z "$RENAME" ]; then
 fi
 
 if [ "$OS" == "Linux" ]; then
-    ASSET_URL="https://oxen.rocks/oxen-io/oxen-core/oxen-dev-linux-LATEST.tar.xz"
+    ASSET_URL="https://lozzax.rocks/lozzax-io/lozzax-core/lozzax-dev-linux-LATEST.tar.xz"
 elif [ "$OS" == "Windows" ]; then
-    ASSET_URL="https://oxen.rocks/oxen-io/oxen-core/oxen-dev-win-LATEST.zip"
+    ASSET_URL="https://lozzax.rocks/lozzax-io/lozzax-core/lozzax-dev-win-LATEST.zip"
 elif [ "$OS" == "macOS" ]; then
-    ASSET_URL="https://oxen.rocks/oxen-io/oxen-core/oxen-dev-macos-LATEST.tar.xz"
+    ASSET_URL="https://lozzax.rocks/lozzax-io/lozzax-core/lozzax-dev-macos-LATEST.tar.xz"
 else
     echo "OS must be Linux, Windows or macOS"
     exit 1
@@ -29,4 +29,4 @@ curl -sL --fail \
     -o "${RENAME}" \
     "$ASSET_URL"
 
-echo "Oxen binaries downloaded"
+echo "Lozzax binaries downloaded"

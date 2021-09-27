@@ -1,5 +1,5 @@
 <template>
-  <div class="oxen-field" :class="{ disable, 'disable-hover': disableHover }">
+  <div class="lozzax-field" :class="{ disable, 'disable-hover': disableHover }">
     <div v-if="label" class="label row items-center" :disabled="disable">
       {{ label }}
       <span v-if="optional" class="optional"
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "OxenField",
+  name: "LozzaxField",
   props: {
     label: {
       type: String,
@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style lang="scss">
-.oxen-field {
+.lozzax-field {
   .label {
     margin: 6px 0;
     font-weight: bold;
@@ -92,7 +92,7 @@ export default {
       margin: 0;
 
       * {
-        // Oxen navy, can't use vars here :(
+        // Lozzax navy, can't use vars here :(
         color: #1f1c47;
       }
     }

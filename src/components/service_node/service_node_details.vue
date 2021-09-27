@@ -40,7 +40,7 @@
                 </div>
                 <div class="value">
                   <span
-                    ><FormatOxen :amount="node.staking_requirement" raw-value
+                    ><FormatLozzax :amount="node.staking_requirement" raw-value
                   /></span>
                 </div>
               </div>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="value">
                   <span
-                    ><FormatOxen :amount="node.total_contributed" raw-value
+                    ><FormatLozzax :amount="node.total_contributed" raw-value
                   /></span>
                 </div>
               </div>
@@ -120,7 +120,7 @@
               </div>
             </div>
           </div>
-          <q-list no-border :dark="theme == 'dark'" class="oxen-list">
+          <q-list no-border :dark="theme == 'dark'" class="lozzax-list">
             <q-item-label class="contributors-title"
               >{{
                 $t("strings.serviceNodeDetails.contributors")
@@ -129,7 +129,7 @@
             <q-item
               v-for="contributor in contributors"
               :key="contributor.address"
-              class="oxen-list-item"
+              class="lozzax-list-item"
               clickable
               @click="openUserWalletInfo(contributor.address)"
             >
@@ -150,7 +150,7 @@
                     >{{ $t("strings.operator") }} •
                   </span>
                   {{ $t("strings.contribution") }}:
-                  <FormatOxen :amount="contributor.amount" raw-value />
+                  <FormatLozzax :amount="contributor.amount" raw-value />
                 </q-item-label>
               </q-item-label>
               <ContextMenu
@@ -175,12 +175,12 @@
 const { clipboard } = require("electron");
 import { mapState } from "vuex";
 import { date } from "quasar";
-import FormatOxen from "components/format_oxen";
+import FormatLozzax from "components/format_lozzax";
 import ContextMenu from "components/menus/contextmenu";
 export default {
   name: "ServiceNodeDetails",
   components: {
-    FormatOxen,
+    FormatLozzax,
     ContextMenu
   },
   props: {
